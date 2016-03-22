@@ -1,0 +1,15 @@
+<?php
+   $arr = array(); //Declaração da variável array
+   //Atribuição dos valores na posição correspondente no array
+   $arr['nome'] = "Evandro";
+   $arr['sobrenome'] = "Balmant";
+   $arr['idade'] = 25;
+   $arr['macho'] = true;
+   /**
+    * OBS.: Uma requisição AJAX recebe como retorno tudo o
+    * que você escreve no lado do servidor, portanto não
+    * fazemos um return e sim um echo ou print.
+    */
+   //A função json_encode() converte um array para o formato JSON
+   echo json_encode($arr);
+?>

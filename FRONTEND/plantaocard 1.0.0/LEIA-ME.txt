@@ -1,0 +1,3 @@
+C:\Aplicativo.PlantaoCard.GitHub\FRONTEND\plantaocard 1.0.0\www\index.html
+
+- A unica página implementada é a index.html localizada no endereço acima. 

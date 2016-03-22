@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "br.com.plantaocard"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "br.com.plantaocard"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "br.com.plantaocard"
+        }
+    },
+    "dependent_plugins": {}
+}

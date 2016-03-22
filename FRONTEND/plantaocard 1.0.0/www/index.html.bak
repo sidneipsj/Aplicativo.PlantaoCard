@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+	
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+   
+    <title>login</title>
+	
+    <link rel="stylesheet" href="dist/css/framework7.material.min.css">
+    <link rel="stylesheet" href="dist/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="dist/css/my-app.css">
+	
+
+
+   
+  </head>
+  
+  
+  <body>
+  
+
+    <!-- Views -->
+		<div class="views">
+		  <!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+		   
+				<div data-page="index" class="page">
+			   
+				  <center><br><br><br><img src="img/logo_plantao_card.png"></center>
+			   
+			
+            <!-- Login -->
+            
+					<form name= "dados">
+						<div class="list-block">
+							<ul>
+							  <li class="item-content">
+								<div class="item-inner">
+								  <div class="label cartao"><b>Cartão</b></div>
+								  <div class="item-input">
+									<input type="text" name="txt_cartao" id="txt_cartao" placeholder="Numero do Cartão"></input>
+								  </div>
+								</div>
+							  </li>
+							  
+							  <li class="item-content">
+								<div class="item-inner">
+								  <div class="label cartao"><b>Senha</b></div>
+								  <div class="item-input">
+									<input type="password" name="txt_senha" id="txt_senha" placeholder="Senha">
+								  </div>
+								</div>
+							 </li>
+							</ul>
+						</div>
+						<p class="button-rows">
+							<input type="submit" id="btnEntrar" class="button button-big button-fill color-blue" value="Enviar Dados"></input>
+					    </p>
+					</form>
+					
+				   
+					<!-- Roda pé-->
+					<div class="rodape">
+					Copyright © 2016 BTI - Todos os direitos reservados
+					</div>
+			
+			
+				</div>
+			</div>
+		</div>
+		
+	
+
+    <script type="text/javascript" src="dist/js/framework7.min.js"></script>
+    <script type="text/javascript" src="dist/js/my-app.js"></script>
+	<script type = "text/javascript" language = "javascript" src="script.js"> </script>
+	
+<script type="text/javascript">
+   
+	//<!-- Verifica campos são validos-->
+   function verifica_cartao()
+   {		
+		  if(document.dados.txt_cartao.value=="")   
+		 {
+		 	alert('o cartão não pode estar em branco');
+		 	document.dados.txt_cartao.focus();
+		 	return false;
+		 }
+		  if(document.dados.txt_cartao.value.length !=16)   
+		 {
+		 	alert('O numero do cartão deve ter 16 digitos');
+		 	document.dados.txt_cartao.focus();
+		 	return false;
+		 }
+		
+		 if(document.dados.txt_senha.value=="")   
+		 {
+		 	alert('a senha não pode estar em branco');
+		 	document.dados.txt_senha.focus();
+		 	return false;
+		 }
+		 if(document.dados.txt_senha.value.length!=4)   
+		 {
+		 	alert('A senha deve conter 4 digitos');
+		 	document.dados.txt_senha.focus();
+		 	return false;
+		 }
+	
+
+</script>
+		
+
+	
+  </body>
+</html> 
